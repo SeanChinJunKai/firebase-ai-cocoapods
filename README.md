@@ -16,9 +16,9 @@ This is a Kotlin Multiplatform project targeting Android, iOS. It is a sample ap
     * Create a Firebase Project
     * Click on AI Logic in Project Shortcuts on the left navigation sidebar
     * Enable both Gemini Developer API and Vertex AI Gemini API
-    * Create an iOS app with Apple bundle ID as io.github.seanchinjunkai.firebase-ai-cocoapods
+    * Create an iOS app with Apple bundle ID as `io.github.seanchinjunkai.firebase-ai-cocoapods`
     * Download the config file `GoogleService-Info.plist` and place it in `iosApp/iosApp` directory
-    * Create an Android app io.github.seanchinjunkai
+    * Create an Android app sith Android package name as `io.github.seanchinjunkai`
     * Download the config file `google-services.json` and place it in `composeApp` directory
 4.  **Build**:
     * Open the project in Android Studio.
