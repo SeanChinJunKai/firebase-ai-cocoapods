@@ -18,9 +18,19 @@ This is a Kotlin Multiplatform project targeting Android, iOS. It is a sample ap
     * Enable both Gemini Developer API and Vertex AI Gemini API
     * Create an iOS app with Apple bundle ID as `io.github.seanchinjunkai.firebase-ai-cocoapods`
     * Download the config file `GoogleService-Info.plist` and place it in `iosApp/iosApp` directory
-    * Create an Android app sith Android package name as `io.github.seanchinjunkai`
+    * Create an Android app with Android package name as `io.github.seanchinjunkai`
     * Download the config file `google-services.json` and place it in `composeApp` directory
-4.  **Build**:
+> [!NOTE]
+> You can change the Apple Bundle ID and Android Package Name, but be sure to update the following:
+>
+> - **Android**
+    >   - `composeApp/build.gradle.kts`: `applicationId` and `namespace`
+    >   -  Rename all the packages in the sourceSets to be same as both `applicationId` and `namespace`
+>
+> - **iOS**
+    >   - `iosApp/Configuration/Config.xcconfig`: `BUNDLE_ID`
+
+3. **Build**:
     * Open the project in Android Studio.
     * In the `iosApp` directory, run `pod install`.
     * Either open the generated `.xcworkspace` in Xcode and run on a simulator or device, or run the iosApp target in Android Studio with the run configuration set to use the generated `.xcworkspace`.
