@@ -21,14 +21,12 @@ This is a Kotlin Multiplatform project targeting Android, iOS. It is a sample ap
     * Create an Android app with Android package name as `io.github.seanchinjunkai`
     * Download the config file `google-services.json` and place it in `composeApp` directory
 > [!NOTE]
-> You can change the Apple Bundle ID and Android Package Name, but be sure to update the following:
->
+> You can change the Apple bundle ID and Android package name, but be sure to update the following:
 > - **Android**
-    >   - `composeApp/build.gradle.kts`: `applicationId` and `namespace`
-    >   -  Rename all the packages in the sourceSets to be same as both `applicationId` and `namespace`
->
+>   - `composeApp/build.gradle.kts`: `applicationId` and `namespace`
+>   -  Rename all the packages in the sourceSets to be same as both `applicationId` and `namespace`
 > - **iOS**
-    >   - `iosApp/Configuration/Config.xcconfig`: `BUNDLE_ID`
+>   - `iosApp/Configuration/Config.xcconfig`: `BUNDLE_ID`
 
 3. **Build**:
     * Open the project in Android Studio.
